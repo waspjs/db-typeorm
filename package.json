@@ -1,0 +1,19 @@
+{
+  "name": "@wasp/db-typeorm",
+  "version": "0.0.1",
+  "description": "Database provider for Wasp, using TypeORM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Hicks <alex@alexhicks.net> (https://alexhicks.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.115",
+    "@wasp/tslint-rules": "^1.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "typeorm": "^0.2.7"
+  }
+}
