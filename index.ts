@@ -22,7 +22,11 @@ export default class TypeORMPlugin extends wasp.Plugin {
                 namingStrategy: new NamingStrategy()
             }, this.options.orm || {})
         );
-        await connection.connect();
+        try {
+            await connection.connect();
+        } catch (err) {
+            console.error("Couldn't connect to database for TypeORM:", err.message);
+        }
     }
 
     onStop = () => this.connectionManager.get().close();
