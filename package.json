@@ -10,6 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/lodash": "^4.14.115",
+    "@wasp/core": "^0.0.1",
     "@wasp/tslint-rules": "^1.0.1"
   },
   "dependencies": {
